@@ -18,44 +18,49 @@
         .container {
             max-width: 720px;
             padding: 80px 20px;
+        }
+
+        /* Title */
+        h1 {
+            font-size: 56px;          /* larger */
+            font-weight: 400;         /* slightly bolder but still minimal */
+            margin-bottom: 18px;
+            letter-spacing: 1px;
             text-align: center;
         }
 
-        h1 {
-            font-size: 42px;
-            font-weight: 300;
-            margin-bottom: 16px;
-            letter-spacing: 0.5px;
-        }
-
+        /* Subtitle */
         h2 {
-            font-size: 18px;
+            font-size: 26px;          /* larger than before */
             font-weight: 300;
             margin-top: 0;
             margin-bottom: 70px;
             color: #ccc;
-            letter-spacing: 0.3px;
+            letter-spacing: 0.6px;
+            text-align: center;
         }
 
-        a {
+        /* Links */
+        .nav {
+            margin-top: 20px;
+            font-size: 22px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            text-align: left;         /* ensures text aligns left */
+            align-items: flex-start;  /* ensures block aligns left */
+        }
+
+        .nav a {
             color: #fff;
-            text-decoration: none;
-            border-bottom: 1px solid #444;
-            padding-bottom: 2px;
+            text-decoration: none;    /* remove underline */
+            border: none;             /* remove bottom border */
+            padding-bottom: 0;
             transition: opacity 0.2s ease;
         }
 
-        a:hover {
+        .nav a:hover {
             opacity: 0.6;
-            border-bottom-color: #fff;
-        }
-
-        .nav {
-            display: flex;
-            flex-direction: column;
-            gap: 22px;
-            font-size: 20px;
-            margin-top: 60px;
         }
 
         footer {
@@ -63,12 +68,14 @@
             font-size: 14px;
             opacity: 0.6;
             letter-spacing: 0.5px;
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
+
         <h1>SAP</h1>
         <h2>Structural Alignment Protocol</h2>
 
@@ -80,6 +87,7 @@
         </div>
 
         <footer>△SAP – Protocol Index</footer>
+
     </div>
 </body>
 </html>
