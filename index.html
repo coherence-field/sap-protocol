@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,88 +6,95 @@
     <title>SAP — Structural Alignment Protocol</title>
     <style>
         body {
-            background-color: #000;
-            color: #fff;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            font-family: Helvetica, Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
         }
-
         .container {
-            max-width: 720px;
-            padding: 80px 20px;
+            max-width: 900px;
+            margin: 160px auto;
+            padding: 0 20px;
+            text-align: center;
         }
-
-        /* Centered title block */
         h1 {
-            font-size: 44px;
             font-weight: 300;
-            margin-bottom: 18px;
-            letter-spacing: 0.6px;
-            text-align: center;
+            font-size: 42px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
         }
-
-        h2 {
+        .tagline {
             font-size: 20px;
+            color: #cccccc;
             font-weight: 300;
-            margin-top: 0;
-            margin-bottom: 70px;
-            color: #ccc;
-            letter-spacing: 0.4px;
-            text-align: center;
+            margin-bottom: 60px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.5;
         }
-
-        /* Left‑aligned nav block */
-        .nav {
-            margin-top: 20px;
-            font-size: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 18px;
-            text-align: left;        /* ensures text aligns left */
-            align-items: flex-start; /* ensures block aligns left */
+        .section-title {
+            font-size: 26px;
+            font-weight: 300;
+            margin-top: 60px;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
         }
-
-        a {
-            color: #fff;
+        a.block-link {
+            display: block;
+            font-size: 22px;
+            color: #ffffff;
             text-decoration: none;
-            border-bottom: 1px solid #444;
-            padding-bottom: 2px;
-            transition: opacity 0.2s ease;
+            margin: 14px 0;
+            border-bottom: 1px solid #555;
+            padding-bottom: 4px;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
         }
-
-        a:hover {
-            opacity: 0.6;
-            border-bottom-color: #fff;
+        a.block-link:hover {
+            border-bottom-color: #ffffff;
         }
-
         footer {
-            margin-top: 100px;
+            margin-top: 120px;
             font-size: 14px;
             opacity: 0.6;
-            letter-spacing: 0.5px;
             text-align: center;
+            letter-spacing: 0.5px;
         }
     </style>
 </head>
 
 <body>
+
     <div class="container">
 
         <h1>SAP</h1>
-        <h2>Structural Alignment Protocol</h2>
 
-        <div class="nav">
-            <a href="overview.html">Overview</a>
-            <a href="papers.html">Papers</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+        <div class="tagline">
+            The protocol for aligning structures across layers, systems, and environments while preserving coherence, compatibility, and invariant form.
         </div>
+
+        <!-- Overview -->
+        <div class="section-title">Overview</div>
+        <a class="block-link" href="overview.html">Overview →</a>
+
+        <!-- Papers -->
+        <div class="section-title">Papers</div>
+        <a class="block-link" href="papers.html">Papers →</a>
+
+        <!-- About -->
+        <div class="section-title">About</div>
+        <a class="block-link" href="about.html">About →</a>
+
+        <!-- Contact -->
+        <div class="section-title">Contact</div>
+        <a class="block-link" href="contact.html">Contact →</a>
 
         <footer>△SAP – Protocol Index</footer>
 
     </div>
+
 </body>
 </html>
