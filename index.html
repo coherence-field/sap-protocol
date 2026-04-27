@@ -18,44 +18,45 @@
         .container {
             max-width: 720px;
             padding: 80px 20px;
+            /* remove center alignment so nav can anchor left */
+            text-align: left;
         }
 
         /* Title */
         h1 {
-            font-size: 56px;          /* larger */
-            font-weight: 400;         /* slightly bolder but still minimal */
+            font-size: 56px;
+            font-weight: 400;
             margin-bottom: 18px;
             letter-spacing: 1px;
-            text-align: center;
+            text-align: center; /* keep title centered */
         }
 
         /* Subtitle */
         h2 {
-            font-size: 26px;          /* larger than before */
+            font-size: 26px;
             font-weight: 300;
             margin-top: 0;
             margin-bottom: 70px;
             color: #ccc;
             letter-spacing: 0.6px;
-            text-align: center;
+            text-align: center; /* keep subtitle centered */
         }
 
-        /* Links */
+        /* Nav links */
         .nav {
             margin-top: 20px;
             font-size: 22px;
             display: flex;
             flex-direction: column;
             gap: 18px;
-            text-align: left;         /* ensures text aligns left */
-            align-items: flex-start;  /* ensures block aligns left */
+            align-items: flex-start; /* anchor the block to the left */
         }
 
         .nav a {
             color: #fff;
-            text-decoration: none;    /* remove underline */
-            border: none;             /* remove bottom border */
-            padding-bottom: 0;
+            text-decoration: none; /* remove underline */
+            border: none;
+            padding: 0;
             transition: opacity 0.2s ease;
         }
 
