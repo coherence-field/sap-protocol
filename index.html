@@ -20,6 +20,7 @@
             padding: 80px 20px;
         }
 
+        /* Centered title block */
         h1 {
             font-size: 44px;
             font-weight: 300;
@@ -38,6 +39,17 @@
             text-align: center;
         }
 
+        /* Left‑aligned nav block */
+        .nav {
+            margin-top: 20px;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            text-align: left;        /* ensures text aligns left */
+            align-items: flex-start; /* ensures block aligns left */
+        }
+
         a {
             color: #fff;
             text-decoration: none;
@@ -49,14 +61,6 @@
         a:hover {
             opacity: 0.6;
             border-bottom-color: #fff;
-        }
-
-        .nav {
-            display: flex;
-            flex-direction: column;
-            gap: 18px;
-            font-size: 20px;
-            margin-top: 20px;
         }
 
         footer {
